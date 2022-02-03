@@ -12,8 +12,8 @@ from twilio.rest import Client # 메시지를 보내기 위한 Twilio 라이브�
 import firebase_admin
 from firebase_admin import firestore, credentials
 
-account_sid = 'AC9e54d727d7d30c12d7ad0741d4ab3918' # Twilio API를 사용하기 위한 계정 번호
-auth_token = 'd7b68f4678b6a3758395c9c1a80188a3' # Twilio API를 사용하기 위한 인증 번호
+account_sid = '' # Twilio API를 사용하기 위한 계정 번호
+auth_token = '' # Twilio API를 사용하기 위한 인증 번호
 client = Client(account_sid, auth_token)
 
 
