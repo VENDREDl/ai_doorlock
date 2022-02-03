@@ -32,8 +32,8 @@ def sendMessage(img): # Twilio API에 메시지 형식을 보내줌
 
     message = client.messages \
         .create(
-        body=f'https://storage.googleapis.com/ai-doorlock.appspot.com/{img}', # 얼굴인식 부분에서 캡쳐된 사진 URL 주소
-        from_='+16023881065',  # Twilio API에서 제공해준 전화번호
+        body=f'{img}', # 얼굴인식 부분에서 캡쳐된 사진 URL 주소
+        from_='',  # Twilio API에서 제공해준 전화번호
         to='+8210' + phone_num1 # 메시지를 받을 사람의 전화번호 ( 추후에 초기설정으로 추가할 수 있도록 바꿀 예정 )
     )
     print(message.sid) # 메시지가 제대로 보내졌는지 확인
